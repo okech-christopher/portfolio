@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Christopher Okech | Data Analyst & Marketing Analytics Specialist</title>
+  <meta name="description" content="Portfolio of Christopher Okech — Data Analyst & Marketing Analytics Specialist based in Nairobi, Kenya. Telemetry processing, predictive ML pipelines, and executive BI dashboards.">
+  
+  <!-- Modern Typography: Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            mono: ['"Plus Jakarta Sans"', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              50: '#f0f9ff',
+              100: '#e0f2fe',
+              500: '#0ea5e9',
+              600: '#0284c7',
+              700: '#0369a1',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  
+  <style>
+    /* Sleek custom scrollbar & micro-details */
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: #09090b; }
+    ::-webkit-scrollbar-thumb { background: #27272a; border-radius: 3px; }
+    ::-webkit-scrollbar-thumb:hover { background: #3f3f46; }
+    
+    .grid-pattern {
+      background-size: 40px 40px;
+      background-image: 
+        linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    }
+    
+    .glow-subtle {
+      box-shadow: 0 0 50px -15px rgba(2, 132, 199, 0.12);
+    }
+    *, html, body, code, pre, span, p, a, div, h1, h2, h3, h4 {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+    }
+  </style>
+</head>
+<body class="bg-[#09090b] text-zinc-300 font-sans selection:bg-brand-600 selection:text-white antialiased min-h-screen">
+
+  <!-- Background subtle grid -->
+  <div class="fixed inset-0 grid-pattern pointer-events-none z-0"></div>
+
+  <!-- Sticky Top Nav -->
+  <header class="sticky top-0 z-50 backdrop-blur-md bg-[#09090b]/80 border-b border-zinc-800/80">
+    <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+      
+      <!-- Brand & Status -->
+      <a href="#" class="flex items-center gap-3 group">
+        <div class="w-8 h-8 rounded-lg bg-zinc-900 border border-zinc-700/80 flex items-center justify-center text-zinc-100 font-sans text-sm font-semibold group-hover:border-brand-500 transition-colors">
+          CO
+        </div>
+        <div>
+          <span class="text-sm font-semibold text-zinc-100 block leading-tight">Christopher Okech</span>
+          <span class="text-[11px] text-zinc-500 font-sans flex items-center gap-1.5">
+            <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span> Available for Roles
+          </span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden md:flex items-center gap-7 text-xs font-medium text-zinc-400">
+        <a href="#work" class="hover:text-zinc-100 transition-colors">Featured Work</a>
+        <a href="#bi-case-study" class="hover:text-zinc-100 transition-colors">Analytics Case Study</a>
+        <a href="#competencies" class="hover:text-zinc-100 transition-colors">Skills & Stack</a>
+        <a href="#experience" class="hover:text-zinc-100 transition-colors">Background</a>
+        <a href="#contact" class="hover:text-zinc-100 transition-colors">Contact</a>
+      </nav>
+
+      <!-- Action Button -->
+      <div class="flex items-center gap-3">
+        <a href="#contact" class="inline-flex items-center gap-2 px-3.5 py-1.5 text-xs font-medium rounded-lg bg-zinc-100 text-zinc-950 hover:bg-white hover:shadow transition-all">
+          Get in Touch
+        </a>
+      </div>
+
+    </div>
+  </header>
+
+  <main class="relative z-10 max-w-6xl mx-auto px-6 pt-16 pb-24 space-y-28">
+
+    <!-- HERO SECTION -->
+    <section class="max-w-3xl space-y-7 pt-6">
+      
+      <!-- Verified Badge -->
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-zinc-900 border border-zinc-800 text-xs font-sans text-zinc-400">
+        <span class="text-brand-500">📍</span> Nairobi, Kenya &nbsp;•&nbsp; KASNEB Certified &nbsp;•&nbsp; Impact Outsourcing
+      </div>
+
+      <!-- Main Headline -->
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-zinc-100 leading-[1.12]">
+        Turning high-volume telemetry & customer data into <span class="text-transparent bg-clip-text bg-gradient-to-r from-zinc-100 via-zinc-200 to-brand-500">high-conviction decisions.</span>
+      </h1>
+
+      <!-- Description -->
+      <p class="text-base sm:text-lg text-zinc-400 leading-relaxed">
+        I am a <strong class="text-zinc-200 font-semibold">Data Analyst & Marketing Analytics Specialist</strong>. My work bridges predictive data science, maritime vessel telemetry at Impact Outsourcing, and full-funnel marketing performance tracking in Power BI, Tableau, SQL, and Python.
+      </p>
+
+      <!-- CTAs & Proof Links -->
+      <div class="flex flex-wrap items-center gap-4 pt-2">
+        <a href="#work" class="px-5 py-2.5 rounded-lg bg-zinc-100 text-zinc-950 font-medium text-xs hover:bg-white transition-all shadow-sm">
+          Explore Projects
+        </a>
+        <a href="https://github.com/okech-christopher" target="_blank" rel="noopener" class="px-5 py-2.5 rounded-lg bg-zinc-900 border border-zinc-800 text-zinc-300 font-medium text-xs hover:bg-zinc-800/80 hover:text-white transition-all inline-flex items-center gap-2">
+          <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+          github.com/okech-christopher
+        </a>
+        <a href="https://linkedin.com/in/christopher-okech-23a560225/" target="_blank" rel="noopener" class="px-5 py-2.5 rounded-lg bg-zinc-900 border border-zinc-800 text-zinc-300 font-medium text-xs hover:bg-zinc-800/80 hover:text-white transition-all inline-flex items-center gap-2">
+          <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+          LinkedIn Profile
+        </a>
+      </div>
+
+      <!-- Quick Metrics Strip -->
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-6 border-t border-zinc-800/80 font-sans">
+        <div class="p-3 rounded-lg bg-zinc-900/60 border border-zinc-800">
+          <span class="text-xs text-zinc-500 block">Zindi Challenge</span>
+          <span class="text-lg font-bold text-zinc-100">Top 10 Finish</span>
+          <span class="text-[11px] text-brand-500 block mt-0.5">F1 Score: 0.7802</span>
+        </div>
+        <div class="p-3 rounded-lg bg-zinc-900/60 border border-zinc-800">
+          <span class="text-xs text-zinc-500 block">Active Telemetry</span>
+          <span class="text-lg font-bold text-zinc-100">Marine Sentry</span>
+          <span class="text-[11px] text-zinc-400 block mt-0.5">High-Volume AIS Tracking</span>
+        </div>
+        <div class="p-3 rounded-lg bg-zinc-900/60 border border-zinc-800">
+          <span class="text-xs text-zinc-500 block">Unit Economics</span>
+          <span class="text-lg font-bold text-zinc-100">4.62x ROAS</span>
+          <span class="text-[11px] text-emerald-400 block mt-0.5">Blended Acquisition Model</span>
+        </div>
+        <div class="p-3 rounded-lg bg-zinc-900/60 border border-zinc-800">
+          <span class="text-xs text-zinc-500 block">Accreditation</span>
+          <span class="text-lg font-bold text-zinc-100">KASNEB</span>
+          <span class="text-[11px] text-zinc-400 block mt-0.5">Diploma in Analytics</span>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- SECTION: FEATURED ANALYTICS CASE STUDY (DEEP DIVE) -->
+    <section id="bi-case-study" class="space-y-8 scroll-mt-24">
+      
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 border-b border-zinc-800 pb-5">
+        <div>
+          <span class="text-xs font-sans uppercase tracking-wider text-brand-500 block mb-1">Interactive Analytics Showcase</span>
+          <h2 class="text-2xl sm:text-3xl font-bold text-zinc-100">Omnichannel Marketing & Customer Analytics Dashboard</h2>
+          <p class="text-sm text-zinc-400 mt-1 max-w-2xl">
+            An end-to-end analytics project bridging top-of-funnel ad spend with downstream customer retention, basket values, and county revenue in Kenya.
+          </p>
+        </div>
+        <div class="flex items-center gap-3">
+          <a href="https://okech-christopher.github.io/marketing-bi-dashboard/dashboard_preview.html" target="_blank" class="px-4 py-2 text-xs font-medium rounded-lg bg-brand-600 text-white hover:bg-brand-500 transition-colors inline-flex items-center gap-1.5">
+            <span>Launch Live Preview</span>
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+          </a>
+          <a href="https://github.com/okech-christopher/marketing-bi-dashboard" target="_blank" class="px-4 py-2 text-xs font-medium rounded-lg bg-zinc-900 border border-zinc-800 text-zinc-300 hover:text-white transition-colors">
+            View Repository
+          </a>
+        </div>
+      </div>
+
+      <!-- Case Study Card with Embedded Screenshots -->
+      <div class="rounded-2xl border border-zinc-800 bg-zinc-900/40 p-6 sm:p-8 space-y-8">
+        
+        <!-- Screenshots Grid -->
+        <div class="space-y-4">
+          <div class="rounded-xl overflow-hidden border border-zinc-800/90 bg-zinc-950 shadow-2xl">
+            <div class="px-4 py-2.5 bg-zinc-900 border-b border-zinc-800 flex items-center justify-between text-xs font-sans text-zinc-400">
+              <span class="flex items-center gap-2">
+                <span class="w-2.5 h-2.5 rounded-full bg-red-500/80"></span>
+                <span class="w-2.5 h-2.5 rounded-full bg-amber-500/80"></span>
+                <span class="w-2.5 h-2.5 rounded-full bg-emerald-500/80"></span>
+                <span class="ml-2 text-zinc-300">Executive KPI Scorecard & Channel Attribution</span>
+              </span>
+              <span class="text-zinc-500">Python & Interactive Web Analytics</span>
+            </div>
+            <img src="assets/dashboard_screenshot_1.png" alt="Executive KPI Scorecard" class="w-full object-cover">
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="rounded-xl overflow-hidden border border-zinc-800 bg-zinc-950">
+              <div class="px-4 py-2 bg-zinc-900/80 border-b border-zinc-800 text-xs font-sans text-zinc-400">
+                Regional Sales: Top Kenyan Counties
+              </div>
+              <img src="assets/dashboard_screenshot_2.png" alt="County Distribution" class="w-full object-cover">
+            </div>
+            <div class="rounded-xl overflow-hidden border border-zinc-800 bg-zinc-950">
+              <div class="px-4 py-2 bg-zinc-900/80 border-b border-zinc-800 text-xs font-sans text-zinc-400">
+                Customer Behavioral Cohorts & Churn Risk
+              </div>
+              <img src="assets/dashboard_screenshot_3.png" alt="Customer Segmentation" class="w-full object-cover">
+            </div>
+          </div>
+        </div>
+
+        <!-- Problem / Solution / Metrics 3-Column Breakdown -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-4 border-t border-zinc-800 text-xs">
+          
+          <div class="space-y-2">
+            <h4 class="font-semibold text-zinc-200 text-sm flex items-center gap-2">
+              <span class="w-2 h-2 rounded-full bg-brand-500"></span> 01. The Problem
+            </h4>
+            <p class="text-zinc-400 leading-relaxed">
+              Digital ad spend across TikTok, Meta, and Google was siloed. Customer Acquisition Costs (CAC) were reported in isolation without attribution to repeat purchases, basket size, or geographic order density across Kenya.
+            </p>
+          </div>
+
+          <div class="space-y-2">
+            <h4 class="font-semibold text-zinc-200 text-sm flex items-center gap-2">
+              <span class="w-2 h-2 rounded-full bg-emerald-500"></span> 02. The Data Architecture
+            </h4>
+            <p class="text-zinc-400 leading-relaxed">
+              Engineered a relational model integrating 180 days of multi-channel ad spend against 2,500 customer transactions. Authored custom DAX calculations for Blended ROAS, CAC, AOV, and Repeat Order percentages.
+            </p>
+          </div>
+
+          <div class="space-y-2">
+            <h4 class="font-semibold text-zinc-200 text-sm flex items-center gap-2">
+              <span class="w-2 h-2 rounded-full bg-amber-500"></span> 03. Business Takeaways
+            </h4>
+            <p class="text-zinc-400 leading-relaxed">
+              Demonstrated that automated email sequences deliver the highest marginal return (8.4x ROAS), while Nairobi and Mombasa represent >55% of revenue, guiding localized inventory stocking.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- SECTION: FEATURED WORK -->
+    <section id="work" class="space-y-8 scroll-mt-24">
+      
+      <div class="border-b border-zinc-800 pb-5">
+        <span class="text-xs font-sans uppercase tracking-wider text-brand-500 block mb-1">Selected Projects</span>
+        <h2 class="text-2xl sm:text-3xl font-bold text-zinc-100">Machine Learning, Telemetry & Relational Systems</h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+        <!-- PROJECT 1: ZINDI CREDIT SCORING -->
+        <div class="rounded-xl border border-zinc-800 bg-zinc-900/30 p-6 flex flex-col justify-between hover:border-zinc-700 transition-all group">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between text-xs font-sans">
+              <span class="px-2.5 py-1 rounded bg-zinc-800 text-zinc-300">Zindi Top 10 Finish</span>
+              <span class="text-brand-400">F1: 0.7802</span>
+            </div>
+            <div>
+              <h3 class="text-lg font-bold text-zinc-100 group-hover:text-brand-400 transition-colors">
+                African Credit Scoring Challenge (Zindi Study Jam)
+              </h3>
+              <p class="text-xs text-zinc-400 mt-2 leading-relaxed">
+                Trained a cross-border default prediction model over 68,000+ Kenyan loan records. Engineered leak-free time-safe features with <code class="font-sans text-zinc-300">merge_asof</code> and <code class="font-sans text-zinc-300">GroupKFold</code> by customer ID to score out-of-domain applicants in Ghana with zero prior labels.
+              </p>
+            </div>
+            <div class="flex flex-wrap gap-1.5 text-[11px] font-sans text-zinc-400 pt-2">
+              <span class="px-2 py-0.5 rounded bg-zinc-950 border border-zinc-800">LightGBM</span>
+              <span class="px-2 py-0.5 rounded bg-zinc-950 border border-zinc-800">GroupKFold</span>
+              <span class="px-2 py-0.5 rounded bg-zinc-950 border border-zinc-800">Time-Safe Engineering</span>
+              <span class="px-2 py-0.5 rounded bg-zinc-950 border border-zinc-800">Python</span>
+            </div>
+          </div>
+          <div class="pt-6 border-t border-zinc-800/80 mt-6 flex items-center justify-between text-xs">
+            <span class="text-zinc-500">67 Competitive Submissions</span>
+            <a href="https://github.com/okech-christopher/african-credit-scoring" target="_blank" class="text-zinc-200 hover:text-white inline-flex items-center gap-1 font-medium">
+              View Solution Writeup &rarr;
+            </a>
+          </div>
+        </div>
+
+        <!-- PROJECT 2: SME ALTERNATIVE CREDIT ENGINE -->
+        <div class="rounded-xl border border-zinc-800 bg-zinc-900/30 p-6 flex flex-col justify-between hover:border-zinc-700 transition-all group">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between text-xs font-sans">
+              <span class="px-2.5 py-1 rounded bg-zinc-800 text-zinc-300">FastAPI & Docker</span>
+              <span class="text-emerald-400">88% Precision</span>
+            </div>
+            <div>
+              <h3 class="text-lg font-bold text-zinc-100 group-hover:text-brand-400 transition-colors">
+                Alternative SME Credit Scoring Engine & API
+              </h3>
+              <p class="text-xs text-zinc-400 mt-2 leading-relaxed">
+                Replaces conventional bureau scores with non-traditional behavioral metrics: mobile money transaction velocity, utility consistency, and operational tenure. Containerized with Docker and exposed via secured FastAPI REST endpoints.
+              </p>
+            </div>
+            <div class="flex flex-wrap gap-1.5 text-[11px] font-sans text-zinc-400 pt-2">
+              <span class="px-2 py-0.5 rounded bg-zinc-950 border border-zinc-800">FastAPI</span>
+              <span class="px-2 py-0.5 rounded bg-zinc-950 border border-zinc-800">Docker</span>
+              <span class="px-2 py-0.5 rounded bg-zinc-950 border border-zinc-800">CatBoost</span>
+              <span class="px-2 py-0.5 rounded bg-zinc-950 border border-zinc-800">XGBoost</span>
+            </div>
+          </div>
+          <div class="pt-6 border-t border-zinc-800/80 mt-6 flex items-center justify-between text-xs">
+            <span class="text-zinc-500">Inference Engine</span>
+            <a href="https://github.com/okech-christopher/-sme-credit-scoring" target="_blank" class="text-zinc-200 hover:text-white inline-flex items-center gap-1 font-medium">
+              Source Code &rarr;
+            </a>
+          </div>
+        </div>
+
+        <!-- PROJECT 3: CUSTOMER SEGMENTATION & GIS MAPPING -->
+        <div class="rounded-xl border border-zinc-800 bg-zinc-900/30 p-6 flex flex-col justify-between hover:border-zinc-700 transition-all group">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between text-xs font-sans">
+              <span class="px-2.5 py-1 rounded bg-zinc-800 text-zinc-300">Unsupervised Learning</span>
+              <span class="text-brand-400">Silhouette Evaluated</span>
+            </div>
+            <div>
+              <h3 class="text-lg font-bold text-zinc-100 group-hover:text-brand-400 transition-colors">
+                Customer Behavioral Segmentation & Kenya GIS Mapping
+              </h3>
+              <p class="text-xs text-zinc-400 mt-2 leading-relaxed">
+                Applied K-Means clustering across transactional recency, frequency, and monetary (RFM) metrics. Built automated marketing insight generators for each persona alongside interactive Plotly choropleths across Kenyan counties.
+              </p>
+            </div>
+            <div class="flex flex-wrap gap-1.5 text-[11px] font-sans text-zinc-400 pt-2">
+              <span class="px-2 py-0.5 rounded bg-zinc-950 border border-zinc-800">Scikit-learn</span>
+              <span class="px-2 py-0.5 rounded bg-zinc-950 border border-zinc-800">K-Means</span>
+              <span class="px-2 py-0.5 rounded bg-zinc-950 border border-zinc-800">Plotly Choropleth</span>
+              <span class="px-2 py-0.5 rounded bg-zinc-950 border border-zinc-800">Streamlit</span>
+            </div>
+          </div>
+          <div class="pt-6 border-t border-zinc-800/80 mt-6 flex items-center justify-between text-xs">
+            <span class="text-zinc-500">Marketing Intelligence</span>
+            <a href="https://github.com/okech-christopher/customer-segmentation" target="_blank" class="text-zinc-200 hover:text-white inline-flex items-center gap-1 font-medium">
+              Explore Repository &rarr;
+            </a>
+          </div>
+        </div>
+
+        <!-- PROJECT 4: RELATIONAL DATABASE & SQL SUITE -->
+        <div class="rounded-xl border border-zinc-800 bg-zinc-900/30 p-6 flex flex-col justify-between hover:border-zinc-700 transition-all group">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between text-xs font-sans">
+              <span class="px-2.5 py-1 rounded bg-zinc-800 text-zinc-300">Relational Database Systems</span>
+              <span class="text-zinc-400">OLAP & CTEs</span>
+            </div>
+            <div>
+              <h3 class="text-lg font-bold text-zinc-100 group-hover:text-brand-400 transition-colors">
+                Advanced SQL & Relational Database Architecture
+              </h3>
+              <p class="text-xs text-zinc-400 mt-2 leading-relaxed">
+                Repository of production-grade SQL scripts covering multi-table joins, subqueries, complex analytical window functions (<code class="font-sans text-zinc-300">DENSE_RANK</code>, <code class="font-sans text-zinc-300">LAG/LEAD</code>), role security schemas, and transaction management.
+              </p>
+            </div>
+            <div class="flex flex-wrap gap-1.5 text-[11px] font-sans text-zinc-400 pt-2">
+              <span class="px-2 py-0.5 rounded bg-zinc-950 border border-zinc-800">PostgreSQL</span>
+              <span class="px-2 py-0.5 rounded bg-zinc-950 border border-zinc-800">MySQL</span>
+              <span class="px-2 py-0.5 rounded bg-zinc-950 border border-zinc-800">Window Functions</span>
+              <span class="px-2 py-0.5 rounded bg-zinc-950 border border-zinc-800">Schema Design</span>
+            </div>
+          </div>
+          <div class="pt-6 border-t border-zinc-800/80 mt-6 flex items-center justify-between text-xs">
+            <span class="text-zinc-500">Database Scripts</span>
+            <a href="https://github.com/okech-christopher/SQL" target="_blank" class="text-zinc-200 hover:text-white inline-flex items-center gap-1 font-medium">
+              View SQL Repository &rarr;
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- SECTION: SKILLS & METHODOLOGY -->
+    <section id="competencies" class="space-y-8 scroll-mt-24">
+      
+      <div class="border-b border-zinc-800 pb-5">
+        <span class="text-xs font-sans uppercase tracking-wider text-brand-500 block mb-1">Technical Stack</span>
+        <h2 class="text-2xl sm:text-3xl font-bold text-zinc-100">Competencies & Tooling</h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-6 text-xs">
+        
+        <div class="p-5 rounded-xl border border-zinc-800 bg-zinc-900/30 space-y-3">
+          <h3 class="font-bold text-zinc-100 text-sm">Data Science & Python</h3>
+          <ul class="space-y-2 text-zinc-400">
+            <li>• Pandas, NumPy, Scikit-learn</li>
+            <li>• LightGBM, CatBoost, XGBoost</li>
+            <li>• Time-Series Forecasting</li>
+            <li>• Leak-Free GroupKFold Splits</li>
+            <li>• Feature Engineering Pipelines</li>
+          </ul>
+        </div>
+
+        <div class="p-5 rounded-xl border border-zinc-800 bg-zinc-900/30 space-y-3">
+          <h3 class="font-bold text-zinc-100 text-sm">Visualization & Dashboards</h3>
+          <ul class="space-y-2 text-zinc-400">
+            <li>• Python Visual Analytics (Plotly, Seaborn)</li>
+            <li>• Interactive Web Dashboards (Chart.js)</li>
+            <li>• Streamlit Application Development</li>
+            <li>• Executive KPI Scorecards & Reporting</li>
+            <li>• Power BI & Tableau (Foundational)</li>
+          </ul>
+        </div>
+
+        <div class="p-5 rounded-xl border border-zinc-800 bg-zinc-900/30 space-y-3">
+          <h3 class="font-bold text-zinc-100 text-sm">Marketing Analytics</h3>
+          <ul class="space-y-2 text-zinc-400">
+            <li>• Multi-Channel Attribution</li>
+            <li>• Funnel Tracking (CTR, CPA, ROAS)</li>
+            <li>• Customer Churn Modeling</li>
+            <li>• Market Basket (Apriori / Lift)</li>
+            <li>• Canva Visual Design Briefs</li>
+          </ul>
+        </div>
+
+        <div class="p-5 rounded-xl border border-zinc-800 bg-zinc-900/30 space-y-3">
+          <h3 class="font-bold text-zinc-100 text-sm">Databases & Systems</h3>
+          <ul class="space-y-2 text-zinc-400">
+            <li>• Advanced SQL (PostgreSQL, MySQL)</li>
+            <li>• OLAP Window Functions & CTEs</li>
+            <li>• Docker Containerization</li>
+            <li>• FastAPI & Flask Deployment</li>
+            <li>• Secure VPN / AIS Telemetry</li>
+          </ul>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- SECTION: EXPERIENCE & EDUCATION TIMELINE -->
+    <section id="experience" class="space-y-8 scroll-mt-24">
+      
+      <div class="border-b border-zinc-800 pb-5">
+        <span class="text-xs font-sans uppercase tracking-wider text-brand-500 block mb-1">Career & Qualifications</span>
+        <h2 class="text-2xl sm:text-3xl font-bold text-zinc-100">Experience & Education</h2>
+      </div>
+
+      <div class="space-y-6">
+
+        <!-- Role 1 -->
+        <div class="p-6 rounded-xl border border-zinc-800 bg-zinc-900/30 space-y-3">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between text-xs gap-1">
+            <div>
+              <span class="text-base font-bold text-zinc-100">Data Analyst (Vessel Tagging & Satellite Data)</span>
+              <span class="text-brand-400 block sm:inline sm:ml-2">@ Impact Outsourcing</span>
+            </div>
+            <span class="font-sans text-zinc-500">August 2026 – Present &nbsp;|&nbsp; Contract</span>
+          </div>
+          <p class="text-xs text-zinc-400 leading-relaxed">
+            Clean, validate, and process high-volume maritime AIS telemetry and satellite tracking feeds to monitor vessel coordinates, speed, and spatial patterns. Connect securely to the Marine Sentry platform (<code class="font-sans text-zinc-300">maritime-sentry.private.wnwd-infra.com</code>) via configured VPN infrastructure, and deploy automated Python scripts to detect navigational anomalies.
+          </p>
+        </div>
+
+        <!-- Role 2 -->
+        <div class="p-6 rounded-xl border border-zinc-800 bg-zinc-900/30 space-y-3">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between text-xs gap-1">
+            <div>
+              <span class="text-base font-bold text-zinc-100">Digital Marketing Strategist & Campaign Creator</span>
+              <span class="text-brand-400 block sm:inline sm:ml-2">@ Generation Kenya (KEN-DM V4)</span>
+            </div>
+            <span class="font-sans text-zinc-500">June 2026 – October 2026 &nbsp;|&nbsp; Capstones</span>
+          </div>
+          <p class="text-xs text-zinc-400 leading-relaxed">
+            Planned and executed multi-channel growth campaigns across Instagram and TikTok. Created design briefs and marketing assets in Canva (including the 'Mega Sales!' promotion), mapped automated email nurturing workflows, and tracked conversion funnels to evaluate creative ROI.
+          </p>
+        </div>
+
+        <!-- Education Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+          
+          <div class="p-5 rounded-xl border border-zinc-800 bg-zinc-900/20 space-y-1.5">
+            <span class="text-xs font-sans text-brand-500 block">Graduated July 2026</span>
+            <h4 class="text-sm font-bold text-zinc-100">Diploma in Data Management & Analytics</h4>
+            <p class="text-xs text-zinc-400">KASNEB / KCA University</p>
+            <p class="text-[11px] text-zinc-500 mt-2">Comprehensive coursework in SQL Database Management, Python for Data Science, Statistical Modeling, and Warehousing.</p>
+          </div>
+
+          <div class="p-5 rounded-xl border border-zinc-800 bg-zinc-900/20 space-y-1.5">
+            <span class="text-xs font-sans text-emerald-500 block">Certified 2026</span>
+            <h4 class="text-sm font-bold text-zinc-100">Certificate in Digital Marketing (KEN-DM V4)</h4>
+            <p class="text-xs text-zinc-400">Generation: You Employed, Inc.</p>
+            <p class="text-[11px] text-zinc-500 mt-2">Specialized training in social media growth, audience segmentation, Canva creative design, email automation, and performance metrics.</p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- SECTION: CONTACT & CONNECT -->
+    <section id="contact" class="rounded-2xl border border-zinc-800 bg-zinc-900/50 p-8 sm:p-12 text-center space-y-6">
+      
+      <div class="max-w-xl mx-auto space-y-3">
+        <h2 class="text-3xl sm:text-4xl font-bold text-zinc-100">Let's build something data-driven.</h2>
+        <p class="text-xs sm:text-sm text-zinc-400">
+          Open to data analyst, marketing analytics, and business intelligence roles. Feel free to reach out directly or review my code on GitHub.
+        </p>
+      </div>
+
+      <div class="flex flex-wrap items-center justify-center gap-4">
+        
+        <a href="mailto:okechobonyo@gmail.com" class="px-5 py-2.5 rounded-lg bg-zinc-100 text-zinc-950 font-medium text-xs hover:bg-white transition-all inline-flex items-center gap-2">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+          okechobonyo@gmail.com
+        </a>
+
+        <a href="tel:+254758297990" class="px-5 py-2.5 rounded-lg bg-zinc-900 border border-zinc-800 text-zinc-300 font-medium text-xs hover:text-white transition-all inline-flex items-center gap-2">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+          +254 758 297 990
+        </a>
+
+        
+
+      </div>
+
+      <div class="pt-6 border-t border-zinc-800/80 text-xs text-zinc-500">
+        Nairobi, Kenya
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer class="border-t border-zinc-800/80 py-8 text-center text-xs text-zinc-500 relative z-10">
+    <div class="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <span>&copy; 2026 Christopher Okech. All rights reserved.</span>
+      <div class="flex items-center gap-6">
+        <a href="https://github.com/okech-christopher" target="_blank" class="hover:text-zinc-300 transition-colors">GitHub</a>
+        <a href="https://linkedin.com/in/christopher-okech-23a560225/" target="_blank" class="hover:text-zinc-300 transition-colors">LinkedIn</a>
+        <a href="mailto:okechobonyo@gmail.com" class="hover:text-zinc-300 transition-colors">Email</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
